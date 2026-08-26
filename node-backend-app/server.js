@@ -4,10 +4,15 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-app.get('/hello', (req, res) => {
-	res.send('hello world');
+const port = 8000;
+
+app.get('/', (req, res) => {
+	res.json({
+		message: `Hello from port ${ port }`,
+		timestamp: new Date()
+	});
 });
 
-app.listen(3000, () => {
-	console.log('Node server running on localhost:3000');
+app.listen(port, () => {
+	console.log(`Node server running on localhost:${ port }`);
 });
