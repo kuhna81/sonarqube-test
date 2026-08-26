@@ -1,5 +1,7 @@
 <h1>Angular API Test</h1>
 
+<p>{{ data | json }}</p>
+<p>Data exists: {{ data ? 'yes' : 'no' }}</p>
 <div *ngIf="data">
 	<h2>Response</h2>
 	<pre>{{ data | json }}</pre>

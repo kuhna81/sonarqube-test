@@ -20,7 +20,9 @@ export class AppComponent implements OnInit {
 	ngOnInit(): void {
 		this.apiService.getData().subscribe({
 			next: (response) => {
+				console.log("RESPONSE:", response);
 				this.data = response;
+				console.log("this.data:", this.data);
 			},
 			error: (err) => {
 				this.error = err.message;
