@@ -1,0 +1,9 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+pre {
+	background: #f4f4f4;
+	padding: 1rem;
+	border-radius: 5px;
+}

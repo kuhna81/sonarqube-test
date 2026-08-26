@@ -63,6 +63,10 @@
             }
           },
           "defaultConfiguration": "development"
+		  "options": {
+			"port": 8000,
+			"host": "0.0.0.0"
+		  }
         },
         "test": {
           "builder": "@angular/build:unit-test"

@@ -1,0 +1,11 @@
+<h1>Angular API Test</h1>
+
+<div *ngIf="data">
+	<h2>Response</h2>
+	<pre>{{ data | json }}</pre>
+</div>
+
+<div *ngIf="error">
+	<h2>Error</h2>
+	<pre>{{ error }}</pre>
+</div>
